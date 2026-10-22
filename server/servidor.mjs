@@ -15,10 +15,13 @@ import { readFile } from 'node:fs/promises'
 import { extname, join, normalize } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { listServers, speedtest } from './speedtest.mjs'
+import { listModels, listProviderStatuses, streamChat } from './llm-gateway.mjs'
+import { findSkills, installSkill, listInstalledSkills, uninstallSkill } from './skills-search.mjs'
 
 const ROOT = fileURLToPath(new URL('.', import.meta.url))
-const DIST = join(ROOT, '..', 'dist')
+const DIST = process.env.NEXO_DIST || join(ROOT, '..', 'dist')
 const PORT = Number(process.argv[2] || process.env.PORT || 8080)
+const HOST = process.env.NEXO_HOST || (process.platform === 'android' ? '0.0.0.0' : '127.0.0.1')
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -138,10 +141,126 @@ function json(res, code, obj) {
   res.end(body)
 }
 
+function readJson(req, maxBytes = 128 * 1024) {
+  return new Promise((resolve, reject) => {
+    let raw = ''
+    req.setEncoding('utf8')
+    req.on('data', (chunk) => {
+      raw += chunk
+      if (raw.length > maxBytes) {
+        reject(new Error(`corpo excede ${maxBytes} bytes`))
+        req.destroy()
+      }
+    })
+    req.on('end', () => {
+      try {
+        resolve(raw ? JSON.parse(raw) : {})
+      } catch {
+        reject(new Error('JSON inválido'))
+      }
+    })
+    req.on('error', reject)
+  })
+}
+
+function sse(res, event, data) {
+  if (res.destroyed || res.writableEnded) return
+  res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`)
+}
+
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://localhost')
 
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204, {
+      'access-control-allow-origin': '*',
+      'access-control-allow-methods': 'GET, POST, OPTIONS',
+      'access-control-allow-headers': 'content-type, accept',
+    })
+    res.end()
+    return
+  }
+
   // ---------- API ----------
+  if (url.pathname === '/api/skills' && req.method === 'GET') {
+    try {
+      return json(res, 200, { ok: true, skills: await listInstalledSkills() })
+    } catch (error) {
+      return json(res, 500, { ok: false, error: error?.message || String(error) })
+    }
+  }
+
+  if (url.pathname.startsWith('/api/skills/') && req.method === 'POST') {
+    const action = url.pathname.slice('/api/skills/'.length)
+    if (!['search', 'install', 'uninstall'].includes(action)) return json(res, 404, { ok: false, error: 'ação desconhecida' })
+    const origin = req.headers.origin
+    if (origin && origin !== `http://127.0.0.1:${server.address()?.port}` && origin !== `http://localhost:${server.address()?.port}` && origin !== 'http://localhost:3000' && origin !== 'http://127.0.0.1:3000') {
+      return json(res, 403, { ok: false, error: 'origem não autorizada para gerenciar skills' })
+    }
+    try {
+      const body = await readJson(req, 2_048)
+      const result = action === 'search'
+        ? await findSkills(body.query)
+        : action === 'install'
+          ? await installSkill(body.package)
+          : await uninstallSkill(body.name)
+      return json(res, 200, { ok: true, ...result })
+    } catch (error) {
+      return json(res, 400, { ok: false, error: error?.message || String(error) })
+    }
+  }
+
+  if (url.pathname === '/api/llm/providers' && req.method === 'GET') {
+    try {
+      return json(res, 200, { ok: true, providers: await listProviderStatuses() })
+    } catch (error) {
+      return json(res, 500, { ok: false, error: error?.message || String(error) })
+    }
+  }
+
+  if (url.pathname === '/api/llm/models' && req.method === 'GET') {
+    try {
+      const provider = url.searchParams.get('provider') || ''
+      return json(res, 200, { ok: true, provider, models: await listModels(provider) })
+    } catch (error) {
+      return json(res, 400, { ok: false, error: error?.message || String(error), models: [] })
+    }
+  }
+
+  if (url.pathname === '/api/llm/chat' && req.method === 'POST') {
+    let body
+    try {
+      body = await readJson(req)
+    } catch (error) {
+      return json(res, 400, { ok: false, error: error?.message || String(error) })
+    }
+
+    res.writeHead(200, {
+      'content-type': 'text/event-stream; charset=utf-8',
+      'cache-control': 'no-cache, no-transform',
+      connection: 'keep-alive',
+      'x-accel-buffering': 'no',
+      'access-control-allow-origin': '*',
+    })
+    res.flushHeaders?.()
+    const ctrl = new AbortController()
+    res.on('close', () => {
+      if (!res.writableEnded) ctrl.abort()
+    })
+    sse(res, 'ready', { provider: body.provider, model: body.model || '' })
+    try {
+      const result = await streamChat(body, {
+        signal: ctrl.signal,
+        onDelta: (delta) => sse(res, 'delta', { delta }),
+      })
+      sse(res, 'done', result)
+    } catch (error) {
+      sse(res, 'error', { error: error?.name === 'AbortError' ? 'resposta cancelada' : error?.message || String(error) })
+    }
+    res.end()
+    return
+  }
+
   if (url.pathname === '/api/exec' && req.method === 'POST') {
     let raw = ''
     req.on('data', (c) => {
@@ -183,7 +302,12 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (url.pathname === '/api/health') {
-    return json(res, 200, { ok: true, env: 'termux', whitelist: Object.keys(WHITELIST) })
+    return json(res, 200, {
+      ok: true,
+      env: process.platform === 'android' ? 'termux' : process.platform,
+      whitelist: Object.keys(WHITELIST),
+      features: ['exec', 'speedtest', 'llm-gateway', 'mcp', 'skills'],
+    })
   }
 
   // ---------- speedtest (Ookla CLI) ----------
@@ -238,9 +362,15 @@ const server = http.createServer(async (req, res) => {
   }
 })
 
-server.listen(PORT, () => {
+server.listen(PORT, HOST, () => {
+  const address = server.address()
+  const activePort = typeof address === 'object' && address ? address.port : PORT
+  console.log(`NEXO_READY ${activePort}`)
   console.log('============================================================')
-  console.log(` NEXO Lab :: servidor Termux ativo em http://localhost:${PORT}`)
+  console.log(` NEXO Lab :: servidor local (${process.platform}) ativo em http://${HOST}:${activePort}`)
   console.log(` API real: POST /api/exec  (${Object.keys(WHITELIST).length} comandos na whitelist)`)
+  console.log(' LLM API:  GET /api/llm/providers · POST /api/llm/chat')
+  console.log(' Skills:   /api/skills · /api/skills/search · /api/skills/install · /api/skills/uninstall')
+  console.log(' MCP stdio: npm run mcp')
   console.log('============================================================')
 })

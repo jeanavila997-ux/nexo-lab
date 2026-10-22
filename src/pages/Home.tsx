@@ -24,7 +24,16 @@ export default function Home() {
     chat,
     chatTyping,
     sendChat,
+    stopChat,
+    clearChat,
     setRedStance,
+    llmProviders,
+    llmModels,
+    llmSelection,
+    llmError,
+    selectLlmProvider,
+    selectLlmModel,
+    refreshLlmProviders,
     agents,
     activeIds,
     setActiveIds,
@@ -129,8 +138,17 @@ export default function Home() {
               chat={chat}
               typing={chatTyping}
               redStance={state.redStance}
+              providers={llmProviders}
+              models={llmModels}
+              selection={llmSelection}
+              gatewayError={llmError}
               onSend={sendChat}
+              onStop={stopChat}
+              onClear={clearChat}
               onStance={setRedStance}
+              onProvider={selectLlmProvider}
+              onModel={selectLlmModel}
+              onRefresh={() => void refreshLlmProviders()}
             />
             <IntegrityChart history={state.history} />
             <StatsBar

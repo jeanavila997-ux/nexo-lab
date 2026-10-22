@@ -1,7 +1,18 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Exchange, LogEvent, Mode, Team } from '@/lib/engine'
 import { DEFENSE_EFFECTS, ROUND_LENGTH, VECTORS, tick } from '@/lib/engine'
-import { execReal, runSpeedtest } from '@/lib/backend'
+import {
+  execReal,
+  getLlmModels,
+  getLlmProviders,
+  installProjectSkill,
+  installedSkills,
+  runSpeedtest,
+  searchSkills,
+  streamLlmChat,
+  uninstallProjectSkill,
+  type LlmProvider,
+} from '@/lib/backend'
 import { findCommand, helpDetail, helpOverview } from '@/lib/registry'
 import { loadCatalog, type Catalog } from '@/lib/catalog'
 import { explainCommand, type Explanation } from '@/lib/explainer'
@@ -75,6 +86,34 @@ const INITIAL: SimState = {
 
 const MAX_LOG = 180
 const MAX_HISTORY = 160
+const CHAT_KEY = 'nexo-lab.chat.v2'
+const LLM_KEY = 'nexo-lab.llm.v1'
+
+const SIMULATION_PROVIDER: LlmProvider = {
+  id: 'simulation',
+  label: 'NEXO Sim',
+  kind: 'builtin',
+  defaultModel: 'nexo-core',
+  hint: 'Persona determinística embutida; funciona sem servidor.',
+  available: true,
+  configured: true,
+  status: 'ready',
+  detail: 'sempre disponível',
+}
+
+function initialChat(): Record<ChatSide, ChatMessage[]> {
+  const fallback: Record<ChatSide, ChatMessage[]> = {
+    red: [{ id: 0, side: 'red', role: 'assistant', provider: 'simulation', t: 0, text: 'Vermelho na linha. Operação no máximo. Fala comigo — mas cuidado com o que sugere.' }],
+    blue: [{ id: 0, side: 'blue', role: 'assistant', provider: 'simulation', t: 0, text: 'Azul na escuta. Telemetria ativa. Pergunte sobre o estado da defesa ou peça recomendações.' }],
+  }
+  try {
+    const saved = JSON.parse(localStorage.getItem(CHAT_KEY) || 'null')
+    if (saved?.red && saved?.blue) return saved
+  } catch {
+    // armazenamento indisponível ou histórico antigo inválido
+  }
+  return fallback
+}
 
 export function useSimulation() {
   const [state, setState] = useState<SimState>(INITIAL)
@@ -134,26 +173,64 @@ export function useSimulation() {
     }))
   }, [persistAgents])
 
-  // ============ exportar / importar configurações ============
-  const [chat, setChat] = useState<Record<ChatSide, ChatMessage[]>>({
-    red: [
-      {
-        id: 0,
-        side: 'red',
-        t: 0,
-        text: 'Vermelho na linha. Operação no máximo. Fala comigo — mas cuidado com o que sugere.',
-      },
-    ],
-    blue: [
-      {
-        id: 0,
-        side: 'blue',
-        t: 0,
-        text: 'Azul na escuta. Telemetria ativa. Pergunte sobre o estado da defesa ou peça recomendações.',
-      },
-    ],
-  })
+  // ============ chat + gateway de LLMs ============
+  const [chat, setChat] = useState<Record<ChatSide, ChatMessage[]>>(initialChat)
   const [chatTyping, setChatTyping] = useState<Record<ChatSide, boolean>>({ red: false, blue: false })
+  const chatRef = useRef(chat)
+  const chatControllers = useRef<Partial<Record<ChatSide, AbortController>>>({})
+  const [llmProviders, setLlmProviders] = useState<LlmProvider[]>([SIMULATION_PROVIDER])
+  const [llmModels, setLlmModels] = useState<string[]>([])
+  const [llmError, setLlmError] = useState('')
+  const [llmSelection, setLlmSelection] = useState<{ provider: string; model: string }>(() => {
+    try {
+      return JSON.parse(localStorage.getItem(LLM_KEY) || 'null') || { provider: 'ollama', model: 'qwen3.5:4b' }
+    } catch {
+      return { provider: 'ollama', model: 'qwen3.5:4b' }
+    }
+  })
+
+  useEffect(() => {
+    chatRef.current = chat
+    chatId.current = Math.max(chatId.current, ...chat.red.map((message) => message.id + 1), ...chat.blue.map((message) => message.id + 1))
+    try { localStorage.setItem(CHAT_KEY, JSON.stringify(chat)) } catch { /* storage opcional */ }
+  }, [chat])
+
+  useEffect(() => {
+    try { localStorage.setItem(LLM_KEY, JSON.stringify(llmSelection)) } catch { /* storage opcional */ }
+  }, [llmSelection])
+
+  const refreshLlmProviders = useCallback(async () => {
+    try {
+      const remote = await getLlmProviders()
+      setLlmProviders([SIMULATION_PROVIDER, ...remote])
+      setLlmError('')
+    } catch (error) {
+      setLlmProviders([SIMULATION_PROVIDER])
+      setLlmError(error instanceof Error ? error.message : 'gateway LLM indisponível')
+    }
+  }, [])
+
+  useEffect(() => {
+    const initial = window.setTimeout(() => void refreshLlmProviders(), 0)
+    const timer = window.setInterval(() => void refreshLlmProviders(), 30_000)
+    return () => {
+      window.clearTimeout(initial)
+      window.clearInterval(timer)
+    }
+  }, [refreshLlmProviders])
+
+  useEffect(() => {
+    if (llmSelection.provider === 'simulation') {
+      const timer = window.setTimeout(() => setLlmModels(['nexo-core']), 0)
+      return () => window.clearTimeout(timer)
+    }
+    void getLlmModels(llmSelection.provider)
+      .then((models) => {
+        setLlmModels(models)
+        if (!llmSelection.model && models[0]) setLlmSelection((current) => ({ ...current, model: models[0] }))
+      })
+      .catch(() => setLlmModels([]))
+  }, [llmSelection.provider, llmSelection.model])
 
   // carrega o catálogo real (620 comandos) para enriquecer o terminal
   useEffect(() => {
@@ -661,10 +738,56 @@ export function useSimulation() {
   // ============ chat com os dois perfis ============
   const sendChat = useCallback(
     (side: ChatSide, text: string) => {
-      const userMsg: ChatMessage = { id: chatId.current++, side, text: `» ${text}`, t: Date.now() }
-      setChat((c) => ({ ...c, [side]: [...c[side], userMsg].slice(-120) }))
-      setChatTyping((t) => ({ ...t, [side]: true }))
-
+      if (/^\/skills(?:\s|$)/i.test(text)) {
+        const userMsg: ChatMessage = { id: chatId.current++, side, role: 'user', text, t: Date.now() }
+        setChat((current) => ({ ...current, [side]: [...current[side], userMsg].slice(-120) }))
+        const args = text.trim().slice('/skills'.length).trim()
+        const [action, ...rest] = args.split(/\s+/)
+        const value = rest.join(' ').trim()
+        const addResult = (message: Omit<ChatMessage, 'id' | 'side' | 't'>) => {
+          setChat((current) => ({
+            ...current,
+            [side]: [...current[side], { id: chatId.current++, side, t: Date.now(), role: 'assistant', provider: 'find-skills', ...message }].slice(-120),
+          }))
+        }
+        if (!args) {
+          addResult({ text: 'Comandos disponíveis:\n/skills buscar <tema> — encontrar skills em skills.sh\n/skills lista — mostrar as skills instaladas neste projeto\n/skills instalar <owner/repo@skill> — instalar no projeto\n/skills desinstalar <nome> — remover do projeto\n\nExemplo: /skills buscar react performance' })
+          return
+        }
+        const isSearch = !['buscar', 'search', 'lista', 'list', 'instalar', 'install', 'desinstalar', 'uninstall'].includes(action.toLowerCase())
+        const normalized = isSearch ? 'buscar' : action.toLowerCase()
+        const term = isSearch ? args : value
+        if (normalized !== 'lista' && normalized !== 'list' && !term) {
+          addResult({ text: `Informe o argumento para /skills ${normalized}.`, error: true })
+          return
+        }
+        setChatTyping((current) => ({ ...current, [side]: true }))
+        void (async () => {
+          try {
+            if (normalized === 'buscar' || normalized === 'search') {
+              const skills = await searchSkills(term)
+              addResult({
+                text: skills.length ? `${skills.length} skills encontradas para “${term}”. Confira autor, instalações e repositório antes de instalar.` : `Nenhuma skill encontrada para “${term}”. Tente termos mais específicos ou consulte skills.sh.`,
+                skills,
+              })
+            } else if (normalized === 'lista' || normalized === 'list') {
+              const skills = await installedSkills()
+              addResult({ text: skills.length ? `${skills.length} skills instaladas neste projeto.` : 'Nenhuma skill instalada neste projeto.', installedSkills: skills })
+            } else if (normalized === 'instalar' || normalized === 'install') {
+              const output = await installProjectSkill(term)
+              addResult({ text: `Skill instalada no projeto: ${term}\n\n${output.slice(-2_500)}` })
+            } else {
+              const output = await uninstallProjectSkill(term)
+              addResult({ text: `Skill removida do projeto: ${term}\n\n${output.slice(-2_500)}` })
+            }
+          } catch (error) {
+            addResult({ text: error instanceof Error ? error.message : 'falha ao executar /skills', error: true })
+          } finally {
+            setChatTyping((current) => ({ ...current, [side]: false }))
+          }
+        })()
+        return
+      }
       const buildCtx = (): ChatContext => ({
         mode: state.mode,
         status: state.status,
@@ -679,19 +802,16 @@ export function useSimulation() {
         redStance: state.redStance,
         customPrompt: side === 'red' ? agentsRef.current.find((a) => a.id === activeIdsRef.current.red)?.systemPrompt : agentsRef.current.find((a) => a.id === activeIdsRef.current.blue)?.systemPrompt,
       })
+      const ctx = buildCtx()
+      const local = side === 'red' ? redReply(text, ctx) : blueReply(text, ctx)
+      const userMsg: ChatMessage = { id: chatId.current++, side, role: 'user', text, t: Date.now() }
+      const previous = chatRef.current[side]
+      setChat((current) => ({ ...current, [side]: [...current[side], userMsg].slice(-120) }))
+      setChatTyping((current) => ({ ...current, [side]: true }))
+      setLlmError('')
 
-      // "digitando…" — latência de persona
-      setTimeout(() => {
-        const ctx = buildCtx()
-        const { text: reply, fx } = side === 'red' ? redReply(text, ctx) : blueReply(text, ctx)
-
-        setChatTyping((t) => ({ ...t, [side]: false }))
-        setChat((c) => ({
-          ...c,
-          [side]: [...c[side], { id: chatId.current++, side, text: reply, t: Date.now() }].slice(-120),
-        }))
-
-        // efeitos da conversa na rodada
+      const applyEffects = () => {
+        const { fx } = local
         if (fx.redAttack && state.status === 'running') {
           setState((prev) => ({
             ...prev,
@@ -708,10 +828,101 @@ export function useSimulation() {
             setState((prev) => ({ ...prev, integrity: Math.min(100, prev.integrity + fx.blueBoost!.integrityDelta!) }))
           }
         }
-      }, 600 + Math.random() * 900)
+      }
+
+      if (llmSelection.provider === 'simulation') {
+        window.setTimeout(() => {
+          setChatTyping((current) => ({ ...current, [side]: false }))
+          setChat((current) => ({
+            ...current,
+            [side]: [...current[side], {
+              id: chatId.current++, side, role: 'assistant', provider: 'simulation', model: 'nexo-core', text: local.text, t: Date.now(),
+            }].slice(-120),
+          }))
+          applyEffects()
+        }, 450 + Math.random() * 550)
+        return
+      }
+
+      chatControllers.current[side]?.abort()
+      const controller = new AbortController()
+      chatControllers.current[side] = controller
+      const assistantId = chatId.current++
+      setChat((current) => ({
+        ...current,
+        [side]: [...current[side], {
+          id: assistantId,
+          side,
+          role: 'assistant',
+          provider: llmSelection.provider,
+          model: llmSelection.model,
+          text: '',
+          t: Date.now(),
+        }].slice(-120),
+      }))
+
+      const active = side === 'red'
+        ? agentsRef.current.find((agent) => agent.id === activeIdsRef.current.red)
+        : agentsRef.current.find((agent) => agent.id === activeIdsRef.current.blue)
+      const system = `${active?.systemPrompt || ''}\n\nESTADO AO VIVO DA ARENA:\nmodo=${state.mode}; status=${state.status}; rodada=${state.round}; integridade=${Math.round(state.integrity)}%; intensidade=${state.intensity}/10; placar vermelho=${state.score.red}, azul=${state.score.blue}.\nResponda em português do Brasil, como ${side === 'red' ? 'o agente VERMELHO' : 'o agente AZUL'}, de forma clara e útil. Não alegue ter executado ações que não foram confirmadas pela arena.`
+      const messages = [...previous, userMsg].slice(-24).map((message) => ({
+        role: message.role || (message.text.startsWith('»') ? 'user' as const : 'assistant' as const),
+        content: message.text.startsWith('»') ? message.text.slice(2) : message.text,
+      })).filter((message) => message.content.trim())
+
+      void streamLlmChat({
+        provider: llmSelection.provider,
+        model: llmSelection.model || undefined,
+        system,
+        messages,
+      }, {
+        signal: controller.signal,
+        onDelta: (delta) => setChat((current) => ({
+          ...current,
+          [side]: current[side].map((message) => message.id === assistantId ? { ...message, text: message.text + delta } : message),
+        })),
+      }).then((result) => {
+        setChat((current) => ({
+          ...current,
+          [side]: current[side].map((message) => message.id === assistantId
+            ? { ...message, provider: result.provider, model: result.model, durationMs: result.durationMs }
+            : message),
+        }))
+        applyEffects()
+      }).catch((error) => {
+        const cancelled = error instanceof DOMException && error.name === 'AbortError'
+        const message = cancelled ? 'resposta interrompida pelo operador' : error instanceof Error ? error.message : 'falha no provedor'
+        setLlmError(message)
+        setChat((current) => ({
+          ...current,
+          [side]: current[side].map((item) => item.id === assistantId
+            ? { ...item, text: item.text || `[erro] ${message}`, error: !cancelled }
+            : item),
+        }))
+      }).finally(() => {
+        if (chatControllers.current[side] === controller) delete chatControllers.current[side]
+        setChatTyping((current) => ({ ...current, [side]: false }))
+      })
     },
-    [state.mode, state.status, state.intensity, state.integrity, state.score, state.round, state.lastAction, state.redStance],
+    [llmSelection, state.mode, state.status, state.intensity, state.integrity, state.score, state.round, state.lastAction, state.redStance],
   )
+
+  const stopChat = useCallback((side: ChatSide) => chatControllers.current[side]?.abort(), [])
+
+  const clearChat = useCallback((side: ChatSide) => {
+    chatControllers.current[side]?.abort()
+    setChat((current) => ({ ...current, [side]: [] }))
+    setChatTyping((current) => ({ ...current, [side]: false }))
+  }, [])
+
+  const selectLlmProvider = useCallback((provider: string) => {
+    const selected = llmProviders.find((item) => item.id === provider)
+    setLlmSelection({ provider, model: selected?.defaultModel || '' })
+  }, [llmProviders])
+
+  const selectLlmModel = useCallback((model: string) => {
+    setLlmSelection((current) => ({ ...current, model }))
+  }, [])
 
   // ============ exportar / importar configurações ============
   const exportConfig = useCallback(() => {
@@ -763,7 +974,8 @@ export function useSimulation() {
 
   return {
     state, start, pause, reset, setMode, setIntensity, runCommand,
-    chat, chatTyping, sendChat, setRedStance,
+    chat, chatTyping, sendChat, stopChat, clearChat, setRedStance,
+    llmProviders, llmModels, llmSelection, llmError, selectLlmProvider, selectLlmModel, refreshLlmProviders,
     agents, activeRed, activeBlue, activeIds, setActiveIds, addAgent, updateAgent, removeAgent,
     installAllowed, setInstallAllowed,
     exportConfig, importConfig, explain,

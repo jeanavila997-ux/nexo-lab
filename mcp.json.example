@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "nexo-lab": {
+      "command": "node",
+      "args": [
+        "C:/Users/Jean/nexo-lab/server/mcp-servidor.mjs"
+      ]
+    }
+  }
+}

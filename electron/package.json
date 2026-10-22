@@ -1,0 +1,57 @@
+{
+  "name": "nexo-lab-desktop",
+  "productName": "NEXO Lab Desktop",
+  "private": true,
+  "version": "1.5.0",
+  "description": "Edição Electron do NEXO Lab",
+  "main": "main.cjs",
+  "scripts": {
+    "dev": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.jeanavila.nexolab",
+    "productName": "NEXO Lab Desktop",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.cjs",
+      "package.json",
+      "assets/nexo-icon.png"
+    ],
+    "extraResources": [
+      {
+        "from": "../dist",
+        "to": "dist"
+      },
+      {
+        "from": "../server",
+        "to": "server"
+      }
+    ],
+    "win": {
+      "icon": "assets/nexo-icon.ico",
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "NEXO-Lab-Desktop-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "NEXO Lab Desktop",
+      "uninstallDisplayName": "NEXO Lab Desktop"
+    }
+  },
+  "allowScripts": {
+    "electron@39.8.10": true
+  }
+}

@@ -1,14 +1,17 @@
 {
   "name": "nexo-lab",
   "private": true,
-  "version": "1.4.0",
+  "version": "1.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "api": "node --env-file-if-exists=.env server/servidor.mjs 8080",
+    "mcp": "node --env-file-if-exists=.env server/mcp-servidor.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "serve": "node server/servidor.mjs 8080"
+    "serve": "node --env-file-if-exists=.env server/servidor.mjs 8080",
+    "start": "npm run build && npm run serve"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

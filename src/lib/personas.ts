@@ -12,6 +12,13 @@ export interface ChatMessage {
   side: ChatSide | 'sys'
   text: string
   t: number
+  role?: 'user' | 'assistant' | 'system'
+  provider?: string
+  model?: string
+  durationMs?: number
+  error?: boolean
+  skills?: import('./backend').SkillSearchResult[]
+  installedSkills?: import('./backend').InstalledSkill[]
 }
 
 export interface ChatEffect {
