@@ -1,0 +1,313 @@
+{
+  "coverage": {
+    "criteria": {
+      "advisories": {
+        "assessed_clean": 1,
+        "assessed_flagged": 1,
+        "unassessable": 0
+      },
+      "archived": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      },
+      "binary_artifacts": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      },
+      "code_review": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      },
+      "dangerous_workflow": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      },
+      "deprecated": {
+        "assessed_clean": 2,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "downloads": {
+        "assessed_clean": 2,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "install_script": {
+        "assessed_clean": 2,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "provenance": {
+        "assessed_clean": 2,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "publisher_concentration": {
+        "assessed_clean": 1,
+        "assessed_flagged": 0,
+        "unassessable": 1
+      },
+      "security_policy": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      },
+      "staleness": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      },
+      "token_permissions": {
+        "assessed_clean": 0,
+        "assessed_flagged": 0,
+        "unassessable": 2
+      }
+    },
+    "total_dependencies": 2
+  },
+  "dependencies": [
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "advisories"
+      ],
+      "name": "electron",
+      "non_registry_reason": null,
+      "repo": "github.com/electron/electron",
+      "signals": {
+        "advisories": {
+          "detail": "12 advisories affect the installed 39.8.10",
+          "state": "assessed_flagged",
+          "value": [
+            "GHSA-2p8c-gr87-2676",
+            "GHSA-3qxv-5xgr-q7w9",
+            "GHSA-98mx-cjp9-gchm",
+            "GHSA-997q-gvvc-jwmx",
+            "GHSA-9qh4-3jw8-366w",
+            "GHSA-fw47-9c62-h3vw",
+            "GHSA-gr2m-v5gq-v685",
+            "GHSA-h3v5-h239-pg29",
+            "GHSA-hq2x-r82h-9wj4",
+            "GHSA-j84w-jfhq-vhvj",
+            "GHSA-jr5w-w6x2-84p9",
+            "GHSA-x562-297c-g43g"
+          ]
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "12,319,954 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 12319954
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "2 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "electronhq",
+            "electron-nightly"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron/electron"
+        }
+      },
+      "version": "39.8.10",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "electron-builder",
+      "non_registry_reason": null,
+      "repo": "github.com/electron-userland/electron-builder",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "7,760,937 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 7760937
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "onegoldfishh"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/electron-userland/electron-builder"
+        }
+      },
+      "version": "26.15.3",
+      "version_source": "lockfile"
+    }
+  ],
+  "ecosystems": {
+    "npm": 2
+  },
+  "notes": [
+    "cache directory ownership was not verified: os.getuid is POSIX-only, so a cache at C:\\Users\\Jean\\AppData\\Local\\Temp\\supply-chain-risk-auditor-cache owned by another user would not be detected on this platform. Keep the cache under your own user profile, or pass --cache with a private path.",
+    "gh is not authenticated. GitHub allows 60 requests/hour unauthenticated against 5000 authenticated, so repository signals may be unassessable.",
+    "Optional tooling detected: npm. Not installed, so not used: bundler-audit, cargo-audit, osv-scanner, pip-audit.",
+    "Every criterion except advisories applies to direct dependencies only. The 270 registry-verified packages resolved by package-lock.json were checked for known advisories at their locked versions, and for nothing else.",
+    "HTTP sources: 6 fetched, 2 served from cache (oldest 0.0h old), 0 refetched as stale, 0 unavailable offline, 2 errors."
+  ],
+  "scan": {
+    "commit": null,
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "path": "C:\\Users\\Jean\\nexo-lab\\electron",
+    "scanned_at": "2026-11-06T03:44:44+00:00",
+    "subject": "electron"
+  },
+  "target": "C:\\Users\\Jean\\nexo-lab\\electron",
+  "transitive": {
+    "checked": 270,
+    "examined": true,
+    "excluded_direct": 2,
+    "flagged": [
+      {
+        "advisories": [
+          "GHSA-7pqw-9j4j-h8q3",
+          "GHSA-jmr9-qjv8-65gv"
+        ],
+        "dev": true,
+        "ecosystem": "npm",
+        "name": "extract-zip",
+        "version": "2.0.1"
+      },
+      {
+        "advisories": [
+          "GHSA-g3hv-75wg-m249"
+        ],
+        "dev": true,
+        "ecosystem": "npm",
+        "name": "minimatch",
+        "version": "10.2.6"
+      },
+      {
+        "advisories": [
+          "GHSA-g3hv-75wg-m249"
+        ],
+        "dev": true,
+        "ecosystem": "npm",
+        "name": "minimatch",
+        "version": "9.0.9"
+      }
+    ],
+    "lockfile_entries": 272,
+    "reason": null,
+    "sources": [
+      "package-lock.json"
+    ],
+    "total": 270,
+    "unverifiable": []
+  }
+}

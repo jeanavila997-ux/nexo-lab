@@ -1,0 +1,5368 @@
+{
+  "coverage": {
+    "criteria": {
+      "advisories": {
+        "assessed_clean": 64,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "archived": {
+        "assessed_clean": 34,
+        "assessed_flagged": 0,
+        "unassessable": 30
+      },
+      "binary_artifacts": {
+        "assessed_clean": 30,
+        "assessed_flagged": 0,
+        "unassessable": 34
+      },
+      "code_review": {
+        "assessed_clean": 30,
+        "assessed_flagged": 0,
+        "unassessable": 34
+      },
+      "dangerous_workflow": {
+        "assessed_clean": 30,
+        "assessed_flagged": 0,
+        "unassessable": 34
+      },
+      "deprecated": {
+        "assessed_clean": 64,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "downloads": {
+        "assessed_clean": 64,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "install_script": {
+        "assessed_clean": 64,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "provenance": {
+        "assessed_clean": 64,
+        "assessed_flagged": 0,
+        "unassessable": 0
+      },
+      "publisher_concentration": {
+        "assessed_clean": 8,
+        "assessed_flagged": 12,
+        "unassessable": 44
+      },
+      "security_policy": {
+        "assessed_clean": 34,
+        "assessed_flagged": 0,
+        "unassessable": 30
+      },
+      "staleness": {
+        "assessed_clean": 33,
+        "assessed_flagged": 1,
+        "unassessable": 30
+      },
+      "token_permissions": {
+        "assessed_clean": 30,
+        "assessed_flagged": 0,
+        "unassessable": 34
+      }
+    },
+    "total_dependencies": 64
+  },
+  "dependencies": [
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@eslint/js",
+      "non_registry_reason": null,
+      "repo": "github.com/eslint/eslint",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "177,305,998 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 177305998
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "2 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "openjsfoundation",
+            "eslintbot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        }
+      },
+      "version": "9.39.5",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@hookform/resolvers",
+      "non_registry_reason": null,
+      "repo": "github.com/react-hook-form/resolvers",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 4/10",
+          "state": "assessed_clean",
+          "value": 4
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "47,875,758 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 47875758
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "3 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "bluebill1049",
+            "kotarella1110",
+            "jorisre"
+          ]
+        },
+        "security_policy": {
+          "detail": "publishes a security policy",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "staleness": {
+          "detail": "pushed 0 days ago",
+          "state": "assessed_clean",
+          "value": "2026-11-05T07:33:25Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "5.9.2",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-accordion",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "53,442,349 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 53442349
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.3.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-alert-dialog",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "51,353,882 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 51353882
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-aspect-ratio",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "41,575,053 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 41575053
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-avatar",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "56,014,098 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 56014098
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.3.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-checkbox",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "58,723,627 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 58723627
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.4.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-collapsible",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "59,672,376 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 59672376
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-context-menu",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "44,428,713 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 44428713
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "2.4.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-dialog",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "90,669,318 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 90669318
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.3.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-dropdown-menu",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "67,959,377 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 67959377
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "2.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-hover-card",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "46,213,023 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 46213023
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-label",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "62,979,312 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 62979312
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "2.1.17",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-menubar",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "40,733,701 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 40733701
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-navigation-menu",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "44,504,760 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 44504760
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.4.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-popover",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "68,577,259 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 68577259
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.3.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-progress",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "52,540,513 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 52540513
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-radio-group",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "52,599,547 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 52599547
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.5.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-scroll-area",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "53,385,015 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 53385015
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.4.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-select",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "65,171,423 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 65171423
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "2.4.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-separator",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "62,458,805 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 62458805
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-slider",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "50,181,438 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 50181438
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.6.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-slot",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "226,406,145 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 226406145
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.5.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-switch",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "57,788,261 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 57788261
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.4.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-tabs",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "72,549,710 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 72549710
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-toggle",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "59,368,483 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 59368483
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-toggle-group",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "49,390,854 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 49390854
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.2.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@radix-ui/react-tooltip",
+      "non_registry_reason": null,
+      "repo": "github.com/radix-ui/primitives",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 3/10",
+          "state": "assessed_clean",
+          "value": 3
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "66,878,085 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 66878085
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "hadihallak",
+            "chancestrickland",
+            "mark-workos",
+            "npm-workos"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 22 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-14T21:52:47Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "1.4.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "@types/node",
+      "non_registry_reason": null,
+      "repo": "github.com/DefinitelyTyped/DefinitelyTyped",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "622,282,506 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 622282506
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (types) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "types"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        }
+      },
+      "version": "24.19.2",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "@types/react",
+      "non_registry_reason": null,
+      "repo": "github.com/DefinitelyTyped/DefinitelyTyped",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "222,034,731 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 222034731
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (types) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "types"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        }
+      },
+      "version": "19.3.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "@types/react-dom",
+      "non_registry_reason": null,
+      "repo": "github.com/DefinitelyTyped/DefinitelyTyped",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "187,559,038 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 187559038
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (types) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "types"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/DefinitelyTyped/DefinitelyTyped"
+        }
+      },
+      "version": "19.3.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "@vitejs/plugin-react",
+      "non_registry_reason": null,
+      "repo": "github.com/vitejs/vite-plugin-react",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "123,356,283 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 123356283
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "yyx990803",
+            "vitebot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite-plugin-react"
+        }
+      },
+      "version": "5.2.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "autoprefixer",
+      "non_registry_reason": null,
+      "repo": "github.com/postcss/autoprefixer",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "75,759,518 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 75759518
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "ai"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/autoprefixer"
+        }
+      },
+      "version": "10.6.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "class-variance-authority",
+      "non_registry_reason": null,
+      "repo": "github.com/joe-bell/cva",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "code_review": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "dangerous_workflow": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "79,311,240 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 79311240
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (joebell93) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "joebell93"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 3 days ago",
+          "state": "assessed_clean",
+          "value": "2026-11-02T13:30:02Z"
+        },
+        "token_permissions": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        }
+      },
+      "version": "0.7.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration",
+        "staleness"
+      ],
+      "name": "clsx",
+      "non_registry_reason": null,
+      "repo": "github.com/lukeed/clsx",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 2/10",
+          "state": "assessed_clean",
+          "value": 2
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "161,442,938 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 161442938
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (lukeed) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "lukeed"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "no push in 2 years (last 2024-06-10)",
+          "state": "assessed_flagged",
+          "value": "2024-06-10T15:48:22Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "2.1.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "cmdk",
+      "non_registry_reason": null,
+      "repo": "github.com/pacocoursey/cmdk",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "code_review": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "dangerous_workflow": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "45,121,109 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 45121109
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "2 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "paco",
+            "dipnpm"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 12 months ago",
+          "state": "assessed_clean",
+          "value": "2025-10-29T04:13:58Z"
+        },
+        "token_permissions": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        }
+      },
+      "version": "1.1.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "date-fns",
+      "non_registry_reason": null,
+      "repo": "github.com/date-fns/date-fns",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "117,779,232 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 117779232
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (kossnocorp) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "kossnocorp"
+          ]
+        },
+        "security_policy": {
+          "detail": "publishes a security policy",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "staleness": {
+          "detail": "pushed 10 days ago",
+          "state": "assessed_clean",
+          "value": "2026-10-26T04:11:52Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 0/10",
+          "state": "assessed_clean",
+          "value": 0
+        }
+      },
+      "version": "4.4.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "embla-carousel-react",
+      "non_registry_reason": null,
+      "repo": "github.com/davidjerleke/embla-carousel",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "code_review": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "dangerous_workflow": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "26,119,136 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 26119136
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (davidjerleke) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "davidjerleke"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 4 days ago",
+          "state": "assessed_clean",
+          "value": "2026-11-01T12:48:18Z"
+        },
+        "token_permissions": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        }
+      },
+      "version": "8.6.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "eslint",
+      "non_registry_reason": null,
+      "repo": "github.com/eslint/eslint",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "203,860,197 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 203860197
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "2 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "openjsfoundation",
+            "eslintbot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/eslint/eslint"
+        }
+      },
+      "version": "9.39.5",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "eslint-plugin-react-hooks",
+      "non_registry_reason": null,
+      "repo": "github.com/facebook/react",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "117,078,220 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 117078220
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "every listed maintainer looks automated; the human population is unknown",
+          "state": "unassessable",
+          "value": [
+            "react-bot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/facebook/react"
+        }
+      },
+      "version": "7.1.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "eslint-plugin-react-refresh",
+      "non_registry_reason": null,
+      "repo": "github.com/ArnaudBarre/eslint-plugin-react-refresh",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "30,420,283 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 30420283
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "arnaud-barre"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/ArnaudBarre/eslint-plugin-react-refresh"
+        }
+      },
+      "version": "0.4.26",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "globals",
+      "non_registry_reason": null,
+      "repo": "github.com/sindresorhus/globals",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "317,611,560 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 317611560
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "4 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "byk",
+            "nzakas",
+            "lo1tuma",
+            "sindresorhus"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/sindresorhus/globals"
+        }
+      },
+      "version": "16.5.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "input-otp",
+      "non_registry_reason": null,
+      "repo": "github.com/guilhermerodz/input-otp",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "code_review": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "dangerous_workflow": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "26,023,869 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 26023869
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "guilhermerodz"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 56 days ago",
+          "state": "assessed_clean",
+          "value": "2026-09-10T16:16:01Z"
+        },
+        "token_permissions": {
+          "detail": "OpenSSF Scorecard has no report for this repository",
+          "state": "unassessable",
+          "value": null
+        }
+      },
+      "version": "1.5.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "kimi-plugin-inspect-react",
+      "non_registry_reason": null,
+      "repo": null,
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "no source repository could be resolved for this package",
+          "state": "unassessable",
+          "value": null
+        },
+        "binary_artifacts": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        },
+        "code_review": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        },
+        "dangerous_workflow": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "66,928 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 66928
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "2 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "emlcj",
+            "chante"
+          ]
+        },
+        "security_policy": {
+          "detail": "no source repository could be resolved for this package",
+          "state": "unassessable",
+          "value": null
+        },
+        "staleness": {
+          "detail": "no source repository could be resolved for this package",
+          "state": "unassessable",
+          "value": null
+        },
+        "token_permissions": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        }
+      },
+      "version": "1.0.3",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "lucide-react",
+      "non_registry_reason": null,
+      "repo": "github.com/lucide-icons/lucide",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "repository is active",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "binary_artifacts": {
+          "detail": "Binary-Artifacts scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "code_review": {
+          "detail": "Code-Review scores 8/10",
+          "state": "assessed_clean",
+          "value": 8
+        },
+        "dangerous_workflow": {
+          "detail": "Dangerous-Workflow scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "127,664,200 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 127664200
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "ericfennis"
+          ]
+        },
+        "security_policy": {
+          "detail": "no security policy found",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "staleness": {
+          "detail": "pushed 0 days ago",
+          "state": "assessed_clean",
+          "value": "2026-11-05T22:02:56Z"
+        },
+        "token_permissions": {
+          "detail": "Token-Permissions scores 10/10",
+          "state": "assessed_clean",
+          "value": 10
+        }
+      },
+      "version": "0.562.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "next-themes",
+      "non_registry_reason": null,
+      "repo": "github.com/pacocoursey/next-themes",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "33,292,289 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 33292289
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "2 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "paco",
+            "trm217"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/pacocoursey/next-themes"
+        }
+      },
+      "version": "0.4.6",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "postcss",
+      "non_registry_reason": null,
+      "repo": "github.com/postcss/postcss",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "410,343,188 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 410343188
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "ai"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/postcss/postcss"
+        }
+      },
+      "version": "8.5.31",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "react",
+      "non_registry_reason": null,
+      "repo": "github.com/react/react",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "248,185,175 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 248185175
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "fb",
+            "react-bot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        }
+      },
+      "version": "19.3.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "react-day-picker",
+      "non_registry_reason": null,
+      "repo": "github.com/gpbl/react-day-picker",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "45,544,835 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 45544835
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "gpbl"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/gpbl/react-day-picker"
+        }
+      },
+      "version": "9.14.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "react-dom",
+      "non_registry_reason": null,
+      "repo": "github.com/react/react",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "232,787,175 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 232787175
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "fb",
+            "react-bot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react/react"
+        }
+      },
+      "version": "19.3.1",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "react-hook-form",
+      "non_registry_reason": null,
+      "repo": "github.com/react-hook-form/react-hook-form",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "60,582,639 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 60582639
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (bluebill1049) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "bluebill1049"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/react-hook-form/react-hook-form"
+        }
+      },
+      "version": "7.91.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "react-resizable-panels",
+      "non_registry_reason": null,
+      "repo": "github.com/bvaughn/react-resizable-panels",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "30,086,905 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 30086905
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (brianvaughn) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "brianvaughn"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/bvaughn/react-resizable-panels"
+        }
+      },
+      "version": "4.14.8",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "react-router",
+      "non_registry_reason": null,
+      "repo": "github.com/remix-run/react-router",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "74,088,642 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 74088642
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "brophdawg11",
+            "mjackson"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/remix-run/react-router"
+        }
+      },
+      "version": "7.18.4",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "recharts",
+      "non_registry_reason": null,
+      "repo": "github.com/recharts/recharts",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "63,179,430 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 63179430
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "nikolasrieble",
+            "ckifer",
+            "corkscreewe"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/recharts/recharts"
+        }
+      },
+      "version": "2.15.4",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "sonner",
+      "non_registry_reason": null,
+      "repo": "github.com/emilkowalski/sonner",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "55,525,762 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 55525762
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (emilkowalski) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "emilkowalski"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/sonner"
+        }
+      },
+      "version": "2.0.8",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "tailwind-merge",
+      "non_registry_reason": null,
+      "repo": "github.com/dcastil/tailwind-merge",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "104,761,780 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 104761780
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "dcas"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/dcastil/tailwind-merge"
+        }
+      },
+      "version": "3.7.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "tailwindcss",
+      "non_registry_reason": null,
+      "repo": "github.com/tailwindlabs/tailwindcss",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "170,794,963 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 170794963
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "malfaitrobin",
+            "adamwathan",
+            "reinink"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/tailwindlabs/tailwindcss"
+        }
+      },
+      "version": "3.4.19",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "tailwindcss-animate",
+      "non_registry_reason": null,
+      "repo": null,
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "no source repository could be resolved for this package",
+          "state": "unassessable",
+          "value": null
+        },
+        "binary_artifacts": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        },
+        "code_review": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        },
+        "dangerous_workflow": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "23,341,597 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 23341597
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (thejameskyle) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "thejameskyle"
+          ]
+        },
+        "security_policy": {
+          "detail": "no source repository could be resolved for this package",
+          "state": "unassessable",
+          "value": null
+        },
+        "staleness": {
+          "detail": "no source repository could be resolved for this package",
+          "state": "unassessable",
+          "value": null
+        },
+        "token_permissions": {
+          "detail": "no source repository to score",
+          "state": "unassessable",
+          "value": null
+        }
+      },
+      "version": "1.0.7",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "tw-animate-css",
+      "non_registry_reason": null,
+      "repo": "github.com/Wombosvideo/tw-animate-css",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "46,601,857 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 46601857
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "wombosvideo"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/Wombosvideo/tw-animate-css"
+        }
+      },
+      "version": "1.4.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "typescript",
+      "non_registry_reason": null,
+      "repo": "github.com/microsoft/TypeScript",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "409,486,164 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 409486164
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "6 human publishers hold publish rights",
+          "state": "assessed_clean",
+          "value": [
+            "microsoft1es",
+            "typescript-bot",
+            "weswigham",
+            "andrewbranch",
+            "typescript-deploys",
+            "microsoft-oss-releases",
+            "jakebailey"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/microsoft/TypeScript"
+        }
+      },
+      "version": "5.9.3",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "typescript-eslint",
+      "non_registry_reason": null,
+      "repo": "github.com/typescript-eslint/typescript-eslint",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "113,991,985 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 113991985
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "jameshenry",
+            "bradzacher"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/typescript-eslint/typescript-eslint"
+        }
+      },
+      "version": "8.72.0",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [
+        "publisher_concentration"
+      ],
+      "name": "vaul",
+      "non_registry_reason": null,
+      "repo": "github.com/emilkowalski/vaul",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "31,283,605 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 31283605
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "no publish provenance",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "publisher_concentration": {
+          "detail": "single human publisher (emilkowalski) of 1 listed",
+          "state": "assessed_flagged",
+          "value": [
+            "emilkowalski"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/emilkowalski/vaul"
+        }
+      },
+      "version": "1.1.2",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": true,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "vite",
+      "non_registry_reason": null,
+      "repo": "github.com/vitejs/vite",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "254,562,201 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 254562201
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "yyx990803",
+            "vitebot"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/vitejs/vite"
+        }
+      },
+      "version": "7.3.7",
+      "version_source": "lockfile"
+    },
+    {
+      "dev": false,
+      "ecosystem": "npm",
+      "exists": true,
+      "flagged": [],
+      "name": "zod",
+      "non_registry_reason": null,
+      "repo": "github.com/colinhacks/zod",
+      "signals": {
+        "advisories": {
+          "detail": "no advisories recorded",
+          "state": "assessed_clean",
+          "value": []
+        },
+        "archived": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        },
+        "binary_artifacts": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        },
+        "code_review": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        },
+        "dangerous_workflow": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        },
+        "deprecated": {
+          "detail": "not deprecated",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "downloads": {
+          "detail": "451,710,780 downloads/week (normal volume)",
+          "state": "assessed_clean",
+          "value": 451710780
+        },
+        "install_script": {
+          "detail": "no install script",
+          "state": "assessed_clean",
+          "value": false
+        },
+        "provenance": {
+          "detail": "publishes with provenance",
+          "state": "assessed_clean",
+          "value": true
+        },
+        "publisher_concentration": {
+          "detail": "publishes from CI with provenance, so the effective publisher set is whoever can merge to the release branch \u2014 not externally observable",
+          "state": "unassessable",
+          "value": [
+            "colinhacks"
+          ]
+        },
+        "security_policy": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        },
+        "staleness": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        },
+        "token_permissions": {
+          "detail": "the GitHub API rate-limited this audit",
+          "state": "unassessable",
+          "value": "rate limited by https://api.github.com/repos/colinhacks/zod"
+        }
+      },
+      "version": "4.6.7",
+      "version_source": "lockfile"
+    }
+  ],
+  "ecosystems": {
+    "npm": 64
+  },
+  "notes": [
+    "cache directory ownership was not verified: os.getuid is POSIX-only, so a cache at C:\\Users\\Jean\\AppData\\Local\\Temp\\supply-chain-risk-auditor-cache owned by another user would not be detected on this platform. Keep the cache under your own user profile, or pass --cache with a private path.",
+    "gh is not authenticated. GitHub allows 60 requests/hour unauthenticated against 5000 authenticated, so repository signals may be unassessable.",
+    "Repository-level criteria (archived, maintenance activity, security policy, and the Scorecard checks) describe the source repository rather than the package. 62 dependencies resolve to 33 distinct repositories, so one repository can appear as several findings. Shared: github.com/DefinitelyTyped/DefinitelyTyped, github.com/eslint/eslint, github.com/radix-ui/primitives, github.com/react/react",
+    "Optional tooling detected: npm. Not installed, so not used: bundler-audit, cargo-audit, osv-scanner, pip-audit.",
+    "Every criterion except advisories applies to direct dependencies only. The 453 registry-verified packages resolved by package-lock.json were checked for known advisories at their locked versions, and for nothing else.",
+    "HTTP sources: 148 fetched, 239 served from cache (oldest 0.1h old), 0 refetched as stale, 0 unavailable offline, 28 errors."
+  ],
+  "scan": {
+    "commit": "2a71ebe9e676",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "path": "C:\\Users\\Jean\\nexo-lab",
+    "scanned_at": "2026-11-06T03:44:17+00:00",
+    "subject": "nexo-lab"
+  },
+  "target": "C:\\Users\\Jean\\nexo-lab",
+  "transitive": {
+    "checked": 453,
+    "examined": true,
+    "excluded_direct": 64,
+    "flagged": [
+      {
+        "advisories": [
+          "GHSA-g3hv-75wg-m249"
+        ],
+        "dev": true,
+        "ecosystem": "npm",
+        "name": "minimatch",
+        "version": "10.2.6"
+      }
+    ],
+    "lockfile_entries": 517,
+    "reason": null,
+    "sources": [
+      "package-lock.json"
+    ],
+    "total": 453,
+    "unverifiable": []
+  }
+}
