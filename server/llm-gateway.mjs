@@ -34,6 +34,16 @@ export const PROVIDERS = Object.freeze({
     defaultModel: env('OLLAMA_MODEL', 'qwen3.5:4b'),
     hint: 'Inferência local pela API nativa do Ollama.',
   },
+  'ollama-cloud': {
+    id: 'ollama-cloud',
+    label: 'Ollama Cloud',
+    kind: 'ollama',
+    baseUrl: trimSlash(env('OLLAMA_CLOUD_BASE_URL', 'https://ollama.com')),
+    apiKeyEnv: ['OLLAMA_API_KEY'],
+    defaultModel: env('OLLAMA_CLOUD_MODEL', 'glm-5.3-flash'),
+    requiresKey: true,
+    hint: 'Modelos abertos hospedados em ollama.com; a chave permanece somente no servidor.',
+  },
   llamacpp: {
     id: 'llamacpp',
     label: 'llama.cpp',
@@ -292,7 +302,7 @@ async function streamOllama(request, onDelta, signal) {
   const { provider, model, messages, temperature, maxTokens } = request
   const response = await fetchWithTimeout(`${provider.baseUrl}/api/chat`, {
     method: 'POST',
-    headers: { 'content-type': 'application/json' },
+    headers: { 'content-type': 'application/json', ...authHeaders(provider) },
     body: JSON.stringify({ model, messages, stream: true, options: { temperature, num_predict: maxTokens } }),
     signal,
   }, DEFAULT_TIMEOUT)
